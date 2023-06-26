@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #191818;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+}
+
+.h-05 {
+    height: 50px;
+}
+
+.h-1 {
+    height: 100px;
+}
+
+.h-2 {
+    height: 200px;
+}
+
+.h-3 {
+    height: 300px;
+}
+
+.h-4 {
+    height: 400px;
+}
+
+.h-5 {
+    height: 500px;
+}
+
+.bg-white {
+    background-color: #fff;
+    color: #191818;
+    transition: 1s ease;
+}
+
+.bg-white-hover:hover {
+    background-color: #191818 !important;
+    color: #fff;
+}
+
+.dark-light-color-fade {
+    background: rgb(25, 24, 24);
+    background: linear-gradient(180deg, rgba(25, 24, 24, 1) 0%, rgba(78, 77, 77, 1) 35%, rgba(255, 255, 255, 1) 100%);
+}
+
+.bg-black {
+    background-color: #191818;
+    color: white;
+    transition: 1s ease;
+}
+
+.text-black {
+    color: #191818 !important;
+    font-weight: bold;
+}
+
+.bg-black-hover:hover {
+    background-color: #fff !important;
+    color: #191818;
+}
+
+a.navbar-brand {
+    color: #fff;
+}
+
+.balance-text {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5vw;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    font-weight: lighter;
+    font-weight: 12px;
+}
+
+.navbar-nav li a:hover {
+    text-decoration: none;
+}
+
+.intro-split-screen-base {
+    overflow: hidden;
+}
+
+.intro-logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 65%;
+    left: 50%;
+    z-index: 1;
+    border-radius: 100px;
+    /* box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.88); */
+}
+
+.intro-logo img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.intro-text-div {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+.intro-text {
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.typewriter {
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid; The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #fff;
+    }
+}
+
+
+.pulse {
+    animation: pulse-animation 1s infinite;
+}
+
+.pulse-bounce {
+    animation: pulse-bounce 1s infinite;
+}
+
+/* @keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+  }
+} */
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.547);
+    }
+
+    50% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.297);
+    }
+}
+
+@keyframes pulse-bounce {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* YING YANG START */
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background: #191818;
+    border-radius: 100%;
+    text-align: center;
+    animation: rotate 40000s infinite;
+}
+
+.circle .yin {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 100%;
+}
+
+.circle .yang {
+    width: 150px;
+    height: 150px;
+    background: #191818;
+    border-radius: 100%;
+    margin-top: -157px;
+    z-index: auto;
+    position: absolute;
+    margin-left: 75px;
+}
+
+.feher {
+    width: 150px;
+    height: 300px;
+    background: white;
+    display: inline-block;
+    margin-top: -150px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
+}
+
+.p-black {
+    width: 50px;
+    height: 50px;
+    background: #191818;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -260px;
+    margin-left: 120px;
+}
+
+.p-white {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 120px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-3600000deg);
+    }
+}
+
+/* YING YANG STOP */
+
+/* SEE SAW START */
+.ball {
+    position: relative;
+    bottom: 100px;
+    left: calc(100% - 70px);
+    width: 100px;
+    height: 100px;
+    background: #191818;
+    border-radius: 50%;
+    animation: ball-move 4s ease-in-out 2s infinite alternate;
+}
+
+.ball::after {
+    position: absolute;
+    content: '';
+    top: 50px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    border-radius: 50%;
+}
+
+.bar {
+    width: 90%;
+    height: 25px;
+    background: #191818;
+    border-radius: 30px;
+    transform: rotate(-15deg);
+    filter: drop-shadow(20px 10px 4px gray);
+    animation: up-down 4s ease-in-out 2s infinite alternate;
+}
+
+@keyframes up-down {
+    from {
+        transform: rotate(-15deg);
+    }
+
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes ball-move {
+    from {
+        left: calc(100% - 70px);
+        transform: rotate(360deg);
+    }
+
+    to {
+        left: calc(0% - 35px);
+        transform: rotate(0deg);
+    }
+}
+
+/* SEE SAW STOP */
+
+/* PENDULUM START */
+.pendulum-stand {
+    width: 100%;
+    height: 10px;
+    background-color: #191818;
+    border-radius: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    filter: drop-shadow(20px 10px 4px gray);
+}
+
+.pendulum {
+    width: 10px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: black;
+    position: relative;
+    margin: 50px auto;
+    filter: drop-shadow(20px 10px 4px gray);
+    animation: swing 4s ease-in-out infinite;
+}
+
+.pendulum::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: black;
+    position: absolute;
+    bottom: -30px;
+    left: -20px;
+}
+
+.pendulum::after {
+    position: absolute;
+    content: '';
+    top: 120px;
+    right: 0px;
+    width: 10px;
+    height: 10px;
+    background: #FFF;
+    border-radius: 50%;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(25deg);
+    }
+
+    25% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-25deg);
+    }
+
+    75% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(25deg);
+    }
+}
+
+/* PENDULUM STOP */
+
+/* INFINITY LOOP START */
+.infinity-path {
+    --size: 120;
+    --speed: 0.65;
+    height: calc(var(--size) * 1px);
+    position: relative;
+    width: calc(var(--size) * 1px);
+    left: 100px;
+}
+
+.infinity-path>div {
+    height: calc(var(--size) * 1px);
+    width: calc(var(--size) * 1px);
+    border-radius: 100%;
+    border: calc(var(--size) / 4 * 1px) solid #191818a4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation-duration: calc(var(--speed) * 1s);
+    animation-duration: calc(var(--speed) * 1s);
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: infinity-spin;
+    animation-name: infinity-spin;
+    transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2) * 1px), 0);
+}
+
+.infinity-path>div:before {
+    content: "";
+    height: calc(var(--size) / 4 * 1px);
+    width: calc(var(--size) / 4 * 1px);
+    border-radius: 100%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    animation: infinity-vanish calc(var(--speed) * 2s) infinite reverse steps(1);
+    transform: translate(calc(var(--translate-2) * 2px), calc(var(--translate) * 1%));
+}
+
+.infinity-path>div:nth-of-type(1) {
+    --translate: -50;
+    --translate-2: calc(var(--size) / 8);
+}
+
+.infinity-path>div:nth-of-type(1):before {
+    right: 0;
+}
+
+.infinity-path>div:nth-of-type(2) {
+    --translate: 50;
+    --translate-2: calc(var(--size) / 8 * -1);
+    -webkit-animation-delay: calc(var(--speed) * 1s);
+    animation-delay: calc(var(--speed) * 1s);
+    animation-direction: reverse;
+}
+
+.infinity-path>div:nth-of-type(2):before {
+    left: 0;
+    transform: translate(calc(var(--size) / 4 * -1px), -50%);
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes infinity-vanish {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes infinity-vanish {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes infinity-spin {
+    from {
+        transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2) * 1px), 0) rotate(0deg);
+    }
+
+    to {
+        transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2) * 1px), 0) rotate(360deg);
+    }
+}
+
+@keyframes infinity-spin {
+    from {
+        transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2) * 1px), 0) rotate(0deg);
+    }
+
+    to {
+        transform: translate(calc(var(--translate) * 1%), 0) translate(calc(var(--translate-2) * 1px), 0) rotate(360deg);
+    }
+}
+
+/* INFINITY LOOP STOP */
+
+.balance-theme h1 {
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.text-italics {
+    font-style: italic;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.tech-chip {
+    width: 100%;
+    height: 200px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.tech-icon {
+    font-size: 130px;
+    transition: 0.3s ease;
+}
+
+.tech-chip-name {
+    font-weight: bold;
+    position: absolute;
+    top: 175px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.divider {
+    height: 5px;
+    background-color: #191818;
+    width: 80%;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.project-chip {
+    width: 100%;
+    height: 300px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.4px);
+    -webkit-backdrop-filter: blur(5.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.product-image-container {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.project-chip:hover .product-image-container {
+    height: 70%;
+}
+
+.product-info {
+    position: absolute;
+    background: #000000c4;
+    width: 100%;
+    bottom: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-chip:hover .product-info {
+    background: #ffffffde;
+    color: #191818 !important;
+}
+
+.product-info-detailed {
+    display: block;
+}
+
+.product-info-detailed h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.product-info-detailed span {
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.product-preview-btn {
+    background-color: #fff;
+    color: #191818 !important;
+    display: flex;
+    font-size: 18px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.product-preview-btn:hover {
+    background: #191818;
+    color: #fff !important;
+}
