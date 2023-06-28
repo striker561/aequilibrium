@@ -635,3 +635,16 @@ a.navbar-brand {
     background: #191818;
     color: #fff !important;
 }
+
+/* SECTION ANIMATION */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+@media (max-width: 768px) {
+    .intro-logo {
+        top: 50%;
+    }
+}
