@@ -30,14 +30,20 @@ function Technologies(){
                     <ProgrammingLanguageColumn iconClass="devicon-css3-plain tech-icons" name="CSS 3"/>
                     <ProgrammingLanguageColumn iconClass="devicon-jquery-plain tech-icons" name="JQUERY"/>
                     <ProgrammingLanguageColumn iconClass="devicon-bootstrap-plain tech-icons" name="BOOTSTRAP"/>
+                    <ProgrammingLanguageColumn iconClass="devicon-react-original tech-icons" name="REACT"/>
                     <ProgrammingLanguageColumn iconClass="devicon-php-plain tech-icons" name="PHP"/>
                     <ProgrammingLanguageColumn iconClass="devicon-python-plain tech-icons" name="PYTHON"/>
                     <ProgrammingLanguageColumn iconClass="devicon-flutter-plain tech-icons" name="FLUTTER"/>
                     <ProgrammingLanguageColumn iconClass="devicon-mysql-plain tech-icons" name="MYSQL"/>
+                    <ProgrammingLanguageColumn iconClass="devicon-postgresql-plain tech-icons" name="POSTGRESQL"/>
                     <ProgrammingLanguageColumn iconClass="devicon-vscode-plain tech-icons" name="VSCODE"/>
                     <ProgrammingLanguageColumn iconClass="devicon-visualstudio-plain tech-icons" name="VISUAL STUDIO"/>
                     <ProgrammingLanguageColumn iconClass="devicon-git-plain tech-icons" name="GIT"/>
                     <ProgrammingLanguageColumn iconClass="devicon-github-plain tech-icons" name="GITHUB"/>
+                    <ProgrammingLanguageColumn iconClass="devicon-fastapi-plain tech-icons" name="FASTAPI"/>
+                    <ProgrammingLanguageColumn iconClass="devicon-postman-plain tech-icons" name="POSTMAN"/>
+                    <ProgrammingLanguageColumn iconClass="devicon-dot-net-plain tech-icons" name=".NET"/>
+                    <ProgrammingLanguageColumn iconClass="devicon-railway-original tech-icons" name="RAILWAY"/>
                 </div>
                 <div>
                     <p className="mt-5 text-italics text-underline">
