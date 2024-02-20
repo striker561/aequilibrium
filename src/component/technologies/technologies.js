@@ -2,7 +2,7 @@ import React from "react";
 
 function ProgrammingLanguageColumn(data){
     return (
-        <div className="col-items col-lg-2 col-md-6 col-sm-6 mb-3">
+        <div className="col-items col-lg-2 col-md-3 col-sm-3 col-xs-3 mb-3">
             <div className="tech-chip">
                 <div className="tech-icon text-center">
                     <i className={data.iconClass}></i>
@@ -22,7 +22,7 @@ function Technologies(){
                     <h1>USED</h1>
                     <p>
                         I have experimented on a lot of technologies
-                        and currently learning a lot new ones
+                        and currently learning a lot new ones.....
                     </p>
                 </div>
                 <div className="row">
@@ -37,7 +37,7 @@ function Technologies(){
                     <ProgrammingLanguageColumn iconClass="devicon-mysql-plain tech-icons" name="MYSQL"/>
                     <ProgrammingLanguageColumn iconClass="devicon-postgresql-plain tech-icons" name="POSTGRESQL"/>
                     <ProgrammingLanguageColumn iconClass="devicon-vscode-plain tech-icons" name="VSCODE"/>
-                    <ProgrammingLanguageColumn iconClass="devicon-visualstudio-plain tech-icons" name="VISUAL STUDIO"/>
+                    <ProgrammingLanguageColumn iconClass="devicon-visualstudio-plain tech-icons" name="VSTUDIO"/>
                     <ProgrammingLanguageColumn iconClass="devicon-git-plain tech-icons" name="GIT"/>
                     <ProgrammingLanguageColumn iconClass="devicon-github-plain tech-icons" name="GITHUB"/>
                     <ProgrammingLanguageColumn iconClass="devicon-fastapi-plain tech-icons" name="FASTAPI"/>
